@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scr/css/style.css" />
+    <title>footer</title>
+  </head>
+  <body>
+    <footer>
+      <div class="wrapper__footer">
+        <div class="wrapper__footer__time"></div>
+        <div class="wrapper__footer__cop-vers">
+          <label> &copy; <i> Pashkouskaya Y.Y. </i> </label>
+          <label> 0.1.0 </label>
+        </div>
+        <nav class="wrapper__footer__nav">
+          <ul class="wrapper__footer__nav__list">
+            <li class="wrapper__footer__nav__item">
+              <a
+                href="https://github.com/MimimiBB-8/task_diary"
+                class="wrapper__footer__nav-git"
+                ><img src="../scr/img/git_img.svg" alt="git logo"
+              /></a>
+            </li>
+            <li class="wrapper__footer__nav__item">
+              <a
+                href="https://www.linkedin.com/in/yuliya-pashkouskaya-b46ab91b0/"
+                class="wrapper__footer__nav__item-linkedin"
+                ><img src="../scr/img/linkedin_img.svg" alt="linkedin logo"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      let d = new Date();
+      let mounth = d.getMonth() + 1;
+      document
+        .querySelector(".wrapper__footer__time")
+        .append(d.getDate() + "/ " + mounth + "/ " + d.getFullYear());
+    </script>
+  </body>
+</html>

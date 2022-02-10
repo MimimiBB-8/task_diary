@@ -14,16 +14,32 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
 }
 
+.wrapper__main {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+h2{
+    margin-bottom: 30px;
+}
+
+.wrapper__description {
+    text-indent: 20px;
+    text-align: center;
+}
+
+.wrapper_header {
+    padding-left: 20%;
+    display: flex;
+}
 
 header {
     padding: 20px;
 }
 
-.wrapper {
-    padding-left: 20%;
-    display: flex;
-}
 
 /* @media (min-width: 1400px) {
     .wrapper {
@@ -42,7 +58,7 @@ header {
     }
 } */
 
-.wrapper__img {
+.wrapper__header__img {
     height: 70px;
 }
 
@@ -97,6 +113,8 @@ header {
     background: #fff;
     cursor: pointer;
     margin: 0 30px;
+    position: absolute;
+    right: 0;
     z-index: 1;
 }
 
@@ -117,8 +135,8 @@ header {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 250px;
-    height: 500px;
+    width: 200px;
+    height: 350px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
@@ -158,7 +176,7 @@ footer {
     align-items: center;
 }
 
-.wrapper__footer__time_cop-vers{
+.wrapper__footer__cop-vers {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
@@ -15,51 +14,34 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
 }
 
-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    font-size: 18px;
-    padding: 0 30%;
-}
-
-.wrapper__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.wrapper__footer__time_cop-vers{
+.wrapper__main {
+    width: 900px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wrapper__footer__nav {
-    display: flex;
-    align-items: center;
+h2{
+    margin-bottom: 30px;
 }
 
-.wrapper__footer__nav__item {
-    margin-right: 15px;
-    display: flex;
+.wrapper__description {
+    text-indent: 20px;
+    text-align: center;
 }
 
-.wrapper__footer__nav__list {
+.wrapper_header {
+    padding-left: 20%;
     display: flex;
 }
-
 
 header {
     padding: 20px;
 }
 
-.wrapper {
-    padding-left: 20%;
-    display: flex;
-}
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .wrapper {
         width: 1200px;
     }
@@ -74,9 +56,9 @@ header {
     .wrapper {
         width: 750px;
     }
-}
+} */
 
-.wrapper__img {
+.wrapper__header__img {
     height: 70px;
 }
 
@@ -106,7 +88,6 @@ header {
     top: -6px;
 }
 
-
 .wrapper__nav {
     width: 100%;
     display: flex;
@@ -132,6 +113,8 @@ header {
     background: #fff;
     cursor: pointer;
     margin: 0 30px;
+    position: absolute;
+    right: 0;
     z-index: 1;
 }
 
@@ -152,8 +135,8 @@ header {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 250px;
-    height: 500px;
+    width: 200px;
+    height: 350px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
@@ -173,4 +156,42 @@ header {
     margin-bottom: 30px;
     padding: 5px 10px;
     transition: all .2s linear;
+}
+
+
+
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 18px;
+    padding: 0 30%;
+}
+
+.wrapper__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__footer__cop-vers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper__footer__nav {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__footer__nav__item {
+    margin-right: 15px;
+    display: flex;
+}
+
+.wrapper__footer__nav__list {
+    display: flex;
 }
