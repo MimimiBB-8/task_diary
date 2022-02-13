@@ -4,90 +4,84 @@
             Monday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>12:00</p>
+            <p>14:40</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Send task</p>
+            <p>Meeting with Tom</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Tuesday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>19:30</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Dansing cours</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Wednesday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>9:00</p>
+            <p>14:00</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Order water</p>
+            <p>Pass the test</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Thursday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>10:00</p>
+            <p>14:40</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Cleaning home</p>
+            <p>Join conference</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Friday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>8:00</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Visiting doctor</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Saturday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>16:00</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Mom's birthday</p>
         </descriptions>
     </planner_item>
     <planner_item>
         <day>
-            Monday
+            Sunday
         </day>
         <time>
-            9:00
-            10:30 
+            <p>12:00</p>
+            <p>19:15</p>
         </time>
         <descriptions>
-            Приготовить завтрак
-            Сделать задание
+            <p>Meeting with friends in the park</p>
+            <p>Cinema</p>
         </descriptions>
     </planner_item>
 </planner>
