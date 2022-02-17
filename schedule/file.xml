@@ -1,0 +1,87 @@
+<planner>
+    <planner_item>
+        <day>
+            Monday
+        </day>
+        <time>
+            <p>12:00</p>
+            <p>14:40</p>
+        </time>
+        <descriptions>
+            <p>Send task</p>
+            <p>Meeting with Tom</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Tuesday
+        </day>
+        <time>
+            <p>19:30</p>
+        </time>
+        <descriptions>
+            <p>Dansing cours</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Wednesday
+        </day>
+        <time>
+            <p>9:00</p>
+            <p>14:00</p>
+        </time>
+        <descriptions>
+            <p>Order water</p>
+            <p>Pass the test</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Thursday
+        </day>
+        <time>
+            <p>10:00</p>
+            <p>14:40</p>
+        </time>
+        <descriptions>
+            <p>Cleaning home</p>
+            <p>Join conference</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Friday
+        </day>
+        <time>
+            <p>8:00</p>
+        </time>
+        <descriptions>
+            <p>Visiting doctor</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Saturday
+        </day>
+        <time>
+            <p>16:00</p>
+        </time>
+        <descriptions>
+            <p>Mom's birthday</p>
+        </descriptions>
+    </planner_item>
+    <planner_item>
+        <day>
+            Sunday
+        </day>
+        <time>
+            <p>12:00</p>
+            <p>19:15</p>
+        </time>
+        <descriptions>
+            <p>Meeting with friends in the park</p>
+            <p>Cinema</p>
+        </descriptions>
+    </planner_item>
+</planner>

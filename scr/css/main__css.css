@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); 
+@import url('../css/media.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper__main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper__nav__checkbox {
+    display: none;
+}
+
+.wrapper__nav__checkbox:checked~.wrapper__nav__menu {
+    right: 0;
+}
+
+.wrapper__nav__checkbox:checked~.wrapper__nav__button .wrapper__nav__button-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.wrapper__nav__checkbox:checked~.wrapper__nav__button .wrapper__nav__button-line:nth-child(2) {
+    opacity: 0;
+}
+
+.wrapper__nav__checkbox:checked~.wrapper__nav__button .wrapper__nav__button-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -6px;
+}
+
+.wrapper__nav__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 30px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 1;
+}
+
+.wrapper__nav__button-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: #000;
+    margin: 2px 0;
+    position: relative;
+    transition: all .1s linear 0.2s;
+}
+
+.wrapper__nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 100px 40px 40px;
+    transition: right 0.4s;
+    border-bottom-left-radius: 100px;
+}
+
+.wrapper__nav__menu-link {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    transition: all .2s linear;
+}
+
+
+.iframe__footer {
+    height: 40px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
