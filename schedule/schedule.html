@@ -8,16 +8,38 @@
     <title>schedule</title>
   </head>
   <body>
+    <!-- Connection header iframe  -->
+    <iframe
+      src="../header/header.html"
+      width="100%"
+      frameborder="0"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+    >
+    </iframe>
     <main>
+      <!-- navigation bar -->
+      <nav class="wrapper__nav">
+        <input type="checkbox" id="checkbox" class="wrapper__nav__checkbox" />
+        <label for="checkbox" class="wrapper__nav__button">
+          <span class="wrapper__nav__button-line"></span>
+          <span class="wrapper__nav__button-line"></span>
+          <span class="wrapper__nav__button-line"></span>
+        </label>
+        <div class="wrapper__nav__menu">
+          <a href="../home/home.html" class="wrapper__nav__menu-link">Home</a>
+          <a href="../schedule/schedule.html" class="wrapper__nav__menu-link"
+            >Schedule</a
+          >
+          <a href="../about/about.html" class="wrapper__nav__menu-link"
+            >About</a
+          >
+        </div>
+      </nav>
+
       <div class="wrapper__main">
         <table id="wrapper__main__table">
+          <!--Description item-->
           <thead>
-            <tr>
-              <td colspan="2" class="wrapper__main__table__thead-planner">
-                Planner
-              </td>
-              <td>Date:</td>
-            </tr>
             <tr>
               <td>Day</td>
               <td>Time</td>
@@ -27,7 +49,66 @@
           <tbody></tbody>
         </table>
       </div>
+
+      <!-- Form for change table style-->
+      <form class="wrapper__change-table">
+        <div class="wrapper__change-table__item">
+
+          <!-- Radio button for choosing castom style -->
+          <label>Choose castom style</label>
+          <div class="wrapper__change-table__item__radio">
+            <input id="first_style" type="radio" name="style" />
+            <input id="second_style" type="radio" name="style" />
+          </div>
+        </div>
+
+        <!-- Input for changing background color-->
+        <div class="wrapper__change-table__item">
+          <label for="color__background">Change background color</label>
+          <input
+            type="color"
+            id="color__background"
+            name="color__background"
+            value="#000033"
+          />
+        </div>
+
+        <!-- Radio button for changing text color -->
+        <div class="wrapper__change-table__item">
+          <label for="color__text">Change text color</label>
+          <input
+            type="color"
+            id="color__text"
+            name="color__text"
+            value="#000033"
+          />
+        </div>
+
+        <!-- Radio button for changing text size -->
+        <div class="wrapper__change-table__item">
+          <label for="text__size">Change text size</label>
+          <input
+            type="number"
+            id="text__size"
+            name="text__size"
+            value="20"
+            min="10"
+            max="25"
+            step="1"
+          />
+        </div>
+      </form>
     </main>
-   <script src="./script.js"></script>
+
+    <!-- Connection footer iframe  -->
+    <iframe
+      src="../footer/footer.html"
+      class="iframe__footer"
+      width="100%"
+      frameborder="0"
+    >
+    </iframe>
+
+    <script src="./script.js"></script>
   </body>
 </html>
