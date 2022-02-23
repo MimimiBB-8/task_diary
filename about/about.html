@@ -37,43 +37,57 @@
         </div>
       </nav>
 
-      <div class="wrapper__main">
+      <div class="wrapper__main" class="vcard">
+
         <!--Information about author-->
         <address>
           <h3>
-            My name is Yuliya Pashkouskaya. I'm a student in epam training
-            center.
+            <span class="fn n">
+              My name is Yuliya Pashkouskaya. I'm a student in epam training
+              center.
+            </span>
           </h3>
-          You can contact author at 
-          <a href="mailto:yuliya.pashkouskaya@gmail.com"
-            >yuliya.pashkouskaya@gmail.com
-          </a> .
-          <br />
           To view the project code, follow the link
           <a href="https://github.com/MimimiBB-8/task_diary">github.com 
           </a> .
-          <br />
         </address>
-        <nav class="wrapper__footer__nav">
-          <ul class="wrapper__footer__nav__list">
-            <li class="wrapper__footer__nav__item">
-              <a
-                href="https://github.com/MimimiBB-8/task_diary"
-                class="wrapper__footer__nav-git"
-              >
-                <img src="../scr/img/git_img.svg" alt="git logo" />
-              </a>
-            </li>
-            <li class="wrapper__footer__nav__item">
-              <a
-                href="https://www.linkedin.com/in/yuliya-pashkouskaya-b46ab91b0/"
-                class="wrapper__footer__nav__item-linkedin"
-              >
-                <img src="../scr/img/linkedin_img.svg" alt="linkedin logo" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container">
+          <div class="form__wrapper">
+
+            <!-- feedback form -->
+            <form id="form__wrapper__feedback">
+              <div class="form__wrapper__feedback__row">
+
+                <!-- User name -->
+                <div class="form__wrapper__feedback__group">
+                  <label for="name" class="control_label">Name</label>
+                  <input id="name" type="text" name="name" class="form__wrapper__feedback__control" value="" placeholder="Name" minlength="2"
+                    maxlength="30" required="required">
+                </div>
+
+                <!-- User email -->
+                <div class="form__wrapper__feedback__group">
+                  <label for="email" class="control-label">Email</label>
+                  <input id="email" type="email" name="email" required="required" class="form__wrapper__feedback__control" value=""
+                    placeholder="Email">
+                </div>
+              </div>
+
+              <!-- User message -->
+              <div class="form__wrapper__feedback__group">
+                <label for="message" class="control-label">Message</label>
+                <textarea id="message" name="message" class="form__wrapper__feedback__control" rows="3"
+                  placeholder="Message (at least 20 characters)" minlength="20" maxlength="500"
+                  required="required"></textarea>
+              </div>
+      
+              <!-- Button for sending message -->
+              <div class="form__wrapper__feedback__submit">
+                <button type="submit">Send message</button>
+              </div>
+            </form>
+      
+          </div>
       </div>
     </main>
 
