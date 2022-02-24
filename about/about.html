@@ -37,20 +37,29 @@
         </div>
       </nav>
 
-      <div class="wrapper__main" class="vcard">
+      <div class="wrapper__main">
 
         <!--Information about author-->
-        <address>
-          <h3>
-            <span class="fn n">
-              My name is Yuliya Pashkouskaya. I'm a student in epam training
-              center.
-            </span>
-          </h3>
-          To view the project code, follow the link
-          <a href="https://github.com/MimimiBB-8/task_diary">github.com 
-          </a> .
+        <!-- Add microformat hCard for description author-->
+        <address  class="vcard">
+          <span class="fn n">
+            <h3 >
+                My name is 
+                
+        <!-- Add microformat name-->
+                <span class="given-name">Yuliya Pashkouskaya </span>. 
+                
+        <!-- Add microformat category-->
+                <span class="category"> I'm a student in epam training center </span>.
+            </h3>
+            To view the project code, follow the link
+            
+        <!-- Add microformat url-->
+            <a href="https://github.com/MimimiBB-8/task_diary" class="url">github.com 
+            </a> .
+          </span>
         </address>
+
         <div class="container">
           <div class="form__wrapper">
 
