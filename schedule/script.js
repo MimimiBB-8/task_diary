@@ -26,11 +26,15 @@ fetch("file.xml").then((response) => {
       /* create td element for item time in xml*/
       td = document.createElement("td");
       td.innerHTML = dayXmlNode.children[1].innerHTML;
+      /*Add microformat event time*/
+      td.classList.add('dtstart')
       row.appendChild(td);
       
       /* create td element for item descriptions in xml*/
       td = document.createElement("td");
       td.innerHTML = dayXmlNode.children[2].innerHTML;
+      /*Add microformat event description*/
+      td.classList.add('summary')
       row.appendChild(td);
 
       tablemain.children[1].appendChild(row);
