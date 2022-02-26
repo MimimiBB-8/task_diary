@@ -1,81 +1,72 @@
 let xmlContent = "";
-let tablemain = document.getElementById("wrapper__main__table");
 
-/*call fetch() method, passing it the URL of the resource */
+let countLoop = 0;
+
+const tbody = document.querySelector("tbody");
+/* Find all row in table */
+const colRow = tbody.querySelectorAll("tr");
+
+/*Call fetch() method, passing it the URL of the resource */
 fetch("file.xml").then((response) => {
   response.text().then((xml) => {
     xmlContent = xml;
 
     /* Creates a new DOMParser object */
-    let parser = new DOMParser();   
+    let parser = new DOMParser();
 
     /* Parses a string using either the XML parser, returning an  XMLDocument */
     let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
 
+    /* Find all item in xml */
     let item = xmlDOM.querySelectorAll("planner_item");
 
-    item.forEach((dayXmlNode) => { /* enumeration of values xml file  */
-      /* create tr element */
-      let row = document.createElement("tr");
-      
-      /* create td element for item day in xml*/
-      let td = document.createElement("td");
-      td.innerHTML = dayXmlNode.children[0].innerHTML;
-      row.appendChild(td);
+      /* Enumeration of values xml file  */
+    item.forEach((dayXmlNode) => {
 
-      /* create td element for item time in xml*/
-      td = document.createElement("td");
-      td.innerHTML = dayXmlNode.children[1].innerHTML;
-      /*Add microformat event time*/
-      td.classList.add('dtstart')
-      row.appendChild(td);
-      
-      /* create td element for item descriptions in xml*/
-      td = document.createElement("td");
-      td.innerHTML = dayXmlNode.children[2].innerHTML;
-      /*Add microformat event description*/
-      td.classList.add('summary')
-      row.appendChild(td);
+      /* Find all collum in current row beginning from 0 position */
+      const colTd = colRow[count].querySelectorAll("td");
 
-      tablemain.children[1].appendChild(row);
+      /* Add information from xml in table collum*/
+      colTd[0].innerHTML = dayXmlNode.children[0].innerHTML;
+      colTd[1].innerHTML = dayXmlNode.children[1].innerHTML;
+      colTd[2].innerHTML = dayXmlNode.children[2].innerHTML;
+
+      countLoop++;
     });
   });
 });
 
 const changeForm = document.querySelector(".wrapper__change-table");
 
-
 function onclick(e) {
   /* selection first radio button */
   if (e.target.id == "first_style") {
     /*change background color for head and body */
-    document.querySelector("table").style.background = '#D4E3E5'
-    document.querySelector("thead").style.background = '#AEC5C8'
-    
+    document.querySelector("table").style.background = "#D4E3E5";
+    document.querySelector("thead").style.background = "#AEC5C8";
+
     /*change text color*/
     document.querySelectorAll("td").forEach(function (td) {
-      td.style.color = 'white';
+      td.style.color = "white";
     });
 
     document.querySelectorAll("p").forEach(function (p) {
-      p.style.color = 'white';
+      p.style.color = "white";
     });
-
   }
 
   /* selection second radio button */
   if (e.target.id == "second_style") {
-
     /*change background color for head and body */
-    document.querySelector("table").style.background = '#DBF213'
-    
+    document.querySelector("table").style.background = "#DBF213";
+
     /*change text color*/
-    document.querySelector("thead").style.background = '#C9D467'
+    document.querySelector("thead").style.background = "#C9D467";
     document.querySelectorAll("td").forEach(function (td) {
-      td.style.color = 'white';
+      td.style.color = "white";
     });
     document.querySelectorAll("p").forEach(function (p) {
-      p.style.color = 'white';
+      p.style.color = "white";
     });
   }
 }
@@ -98,27 +89,20 @@ function startup() {
 }
 
 function updateBackgroundColor(event) {
-
   document.querySelector("table").style.background = event.target.value;
   document.querySelector("thead").style.background = event.target.value;
-
 }
 
 function updateTextColor(event) {
-
   document.querySelectorAll("td").forEach(function (td) {
     td.style.color = event.target.value;
   });
   document.querySelectorAll("p").forEach(function (p) {
     p.style.color = event.target.value;
   });
-
 }
 
 function updateTextSize(event) {
-
   const tab = document.querySelector("table");
   tab.style.fontSize = event.target.value + "px";
-
 }
-
