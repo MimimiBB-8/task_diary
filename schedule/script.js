@@ -24,7 +24,7 @@ fetch("file.xml").then((response) => {
     item.forEach((dayXmlNode) => {
 
       /* Find all collum in current row beginning from 0 position */
-      const colTd = colRow[count].querySelectorAll("td");
+      const colTd = colRow[countLoop].querySelectorAll("td");
 
       /* Add information from xml in table collum*/
       colTd[0].innerHTML = dayXmlNode.children[0].innerHTML;
