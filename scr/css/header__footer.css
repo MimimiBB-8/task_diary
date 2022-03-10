@@ -3,17 +3,19 @@
 
 
 header {
-    padding: 20px;
-    
     text-transform: uppercase;
 }
 
 .wrapper__header{
-    margin: auto;
+    width: 100%;
+    padding: 20px 0 20px 90px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+}
+
+.wrapper__header_logo{
+    display: flex;
+    align-items: center;
 }
 
 .wrapper__header__img {
@@ -26,7 +28,6 @@ footer {
 }
 
 .wrapper__footer {
-    
     margin: auto;
     display: flex;
     justify-content:space-around;

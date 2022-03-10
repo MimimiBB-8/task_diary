@@ -15,42 +15,51 @@
       width="100%"
       frameborder="0"
       sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+      class="header__iframe"
     >
     </iframe>
 
     <main>
-      <!-- navigation bar -->
-      <nav class="wrapper__nav">
-        <input type="checkbox" id="checkbox" class="wrapper__nav__checkbox" />
-        <label for="checkbox" class="wrapper__nav__button">
-          <span class="wrapper__nav__button-line"></span>
-          <span class="wrapper__nav__button-line"></span>
-          <span class="wrapper__nav__button-line"></span>
-        </label> 
-        <div class="wrapper__nav__menu">
-          <a href="./index.html" class="wrapper__nav__menu-link">Home</a>
-          <a href="./schedule/schedule.html" class="wrapper__nav__menu-link">Schedule</a>
-          <a href="./about/about.html" class="wrapper__nav__menu-link">About</a>
-        </div>
-      </nav>
-      
       <!-- Add Schema.org vocabulary encoding RDFa item Article for description project task 2 point 7-->
       <div class="wrapper__main" vocab="https://schema.org/" typeof="Article">
+        <nav class="wrapper__header__nav">
+          <div class="wrapper__header__menu">
+            <a href="./index.html">Home</a>
+            <a href="./schedule/schedule.html">Schedule</a>
+            <a href="./about/about.html">About</a>
+          </div>
+        </nav>
         <!-- Add item name-->
         <h2 class="wrapper__topic" property="name">
           This project has been created for Epam training center
         </h2>
 
         <!-- Description of the subject of development-->
-        <!-- Add item name-->
-        <article class="wrapper__description" property="description">
-          The daily routine can drag out our live. People often forget about
-          events, berthday. The diary helps to plan the day, focus on important
-          things. It can be used to structure the chaos of random processes in
-          work and private life.
-        </article>
+        <div>
+          <div class="wrapper__img">
+            <img src="./scr/img/diary.jpg" alt="diary" />
+          </div>
+          <!-- Add item name-->
+          <article class="wrapper__description" property="description">
+            Most of us understand the value of planning and preparation. A
+            sports match without a game plan means fumbling on the field. A big
+            event without all the details in place leads to chaos. Despite this
+            knowledge, we often fail to prioritize planning where it matters
+            most: our daily lives. Getting started in the morning without a
+            clear plan sets us up to fail. We set goals on the order of seasons
+            and years, but it’s what we do each day — the habits we adopt, the
+            tasks we complete, and the things we prioritize — that compound over
+            time into success or failure. A few aimless days each month can help
+            us reset and find balance. But when our days without intention
+            exceed our days with purpose, we end up missing our goals and
+            wondering where all the time went.It can be used to structure the
+            chaos of random processes in work and private life.
+          </article>
 
-        <p property="description">The project has been developed with <b>HTML, CSS, JS</b></p>
+          <p property="description">
+            The project has been developed with <b>HTML, CSS, JS</b>
+          </p>
+        </div>
       </div>
     </main>
     <!-- Connection footer iframe  -->

@@ -3,11 +3,39 @@
 h2 {
     margin-bottom: 30px;
     text-align: center;
-
 }
 
 .wrapper__description {
     text-indent: 20px;
-    text-align: center;
 }
 
+.header__iframe{
+    height: 120px;
+}
+
+.wrapper__header__nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*use position absolute*/
+.wrapper__header__menu{
+    line-height: 70px;
+    position: absolute;
+    width: 500px;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper__img{
+    float: left;
+    margin-right: 15px;
+}
+.wrapper__img img{
+    height: 250px;
+    
+}
