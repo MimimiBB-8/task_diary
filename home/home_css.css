@@ -26,6 +26,7 @@ h2 {
     width: 500px;
     top: 20px;
     right: 200px;
+    /* Usage GridLayout*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -36,5 +37,24 @@ h2 {
 }
 .wrapper__img img{
     height: 250px;
-    
+}
+
+.wrapper__news{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+.wrapper__news__item{
+    width: 200px;
+}
+.wrapper__news__item img{
+    width: 200px;
+    height: 150px;
 }
