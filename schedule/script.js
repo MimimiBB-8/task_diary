@@ -20,9 +20,8 @@ fetch("file.xml").then((response) => {
     /* Find all item in xml */
     let item = xmlDOM.querySelectorAll("planner_item");
 
-      /* Enumeration of values xml file  */
+    /* Enumeration of values xml file  */
     item.forEach((dayXmlNode) => {
-
       /* Find all collum in current row beginning from 0 position */
       const colTd = colRow[countLoop].querySelectorAll("td");
 
@@ -106,3 +105,13 @@ function updateTextSize(event) {
   const tab = document.querySelector("table");
   tab.style.fontSize = event.target.value + "px";
 }
+
+document.addEventListener("scroll", function () {
+  /* Find coordinates of scroll and add background for navigation */
+  if (window.pageYOffset >= 40) {
+    /* Get element for transformation */
+    document.querySelector(".wrapper__header__nav").style.background = "white";
+  } else {
+    document.querySelector(".wrapper__header__nav").style.background = "none";
+  }
+});

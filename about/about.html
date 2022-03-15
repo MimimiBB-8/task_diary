@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../about/about_css.css" />
+    <link rel="stylesheet" href="../scr/css/media.css">
     <title>about</title>
   </head>
   <body>
@@ -14,31 +15,20 @@
       width="100%"
       frameborder="0"
       sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+      class="header__iframe"
     >
     </iframe>
 
     <main>
+      <div class="wrapper__main">
       <!-- navigation bar -->
-      <nav class="wrapper__nav">
-        <input type="checkbox" id="checkbox" class="wrapper__nav__checkbox" />
-        <label for="checkbox" class="wrapper__nav__button">
-          <span class="wrapper__nav__button-line"></span>
-          <span class="wrapper__nav__button-line"></span>
-          <span class="wrapper__nav__button-line"></span>
-        </label>
-        <div class="wrapper__nav__menu">
-          <a href="../index.html" class="wrapper__nav__menu-link">Home</a>
-          <a href="../schedule/schedule.html" class="wrapper__nav__menu-link"
-            >Schedule</a
-          >
-          <a href="../about/about.html" class="wrapper__nav__menu-link"
-            >About</a
-          >
+      <nav class="wrapper__header__nav">
+        <div class="wrapper__header__menu">
+          <a href="../index.html">Home</a>
+          <a href="../schedule/schedule.html">Schedule</a>
+          <a href="./about/about.html">About</a>
         </div>
       </nav>
-
-      <div class="wrapper__main">
-
         <!--Information about author-->
         <!-- Add Schema.org vocabulary encoding RDFa item Person for description project task 2 point 7-->
         <address vocab="https://schema.org/" typeof="Person">

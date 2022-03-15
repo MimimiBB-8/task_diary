@@ -1,8 +1,5 @@
-@import url('../scr/css/main__css.css');
-
-.wrapper__main{
+.wrapper__main {
     display: grid;
-
 }
 
 h2 {
@@ -14,47 +11,38 @@ h2 {
     text-indent: 20px;
 }
 
-.header__iframe{
-    height: 120px;
-}
 
-
-/*use position absolute*/
-.wrapper__header__menu{
-    line-height: 70px;
-    position: absolute;
-    width: 500px;
-    top: 20px;
-    right: 200px;
-    /* Usage GridLayout*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.wrapper__img{
+.wrapper__img {
+    /*Use float for task 3 point 3*/
     float: left;
     margin-right: 15px;
+
 }
-.wrapper__img img{
+
+.wrapper__img img {
     height: 250px;
 }
 
-.wrapper__news{
+.wrapper__news {
     margin-top: 20px;
     padding: 10px;
+    /*Use flexbox for task 3 point 6*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-h4{
+h4 {
     margin-top: 20px;
 }
 
-.wrapper__news__item{
+.wrapper__news__item {
     width: 200px;
+    
+    margin: 0 15px 20px 0;
 }
-.wrapper__news__item img{
+
+.wrapper__news__item img {
     width: 200px;
     height: 150px;
 }

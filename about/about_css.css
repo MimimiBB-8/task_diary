@@ -1,14 +1,18 @@
 @import url('../scr/css/main__css.css');
 
+.wrapper__main {
+    justify-items:center;
+}
+
 address {
     text-indent: 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
 h3 {
     margin-bottom: 30px;
     text-align: center;
-
 }
 
 ul {
@@ -92,4 +96,11 @@ button[type="submit"] {
     border: 1px solid #485b6f;
     padding: 10px;
     border-radius: 10px;
+}
+
+
+.iframe__footer{
+    /* Usge position for task 3 poin 4*/
+    position: fixed;
+    bottom: 0;
 }

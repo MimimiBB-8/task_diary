@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scr/css/main__css.css" />
     <link rel="stylesheet" href="./home/home_css.css" />
+    <link rel="stylesheet" href="./scr/css/media.css" />
+
     <title>home</title>
   </head>
   <body>
@@ -103,5 +105,18 @@
       frameborder="0"
     >
     </iframe>
+    <script>
+      document.addEventListener("scroll", function () {
+        /* Find coordinates of scroll and add background for navigation */
+        if (window.pageYOffset >= 40) {
+          /* Get element for transformation */
+          document.querySelector(".wrapper__header__nav").style.background =
+            "white";
+        } else {
+          document.querySelector(".wrapper__header__nav").style.background =
+            "none";
+        }
+      });
+    </script>
   </body>
 </html>
