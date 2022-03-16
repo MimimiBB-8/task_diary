@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/varelaround/v18/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+body {
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #191152;
+}
+.wrapper__main {
+  margin: auto;
+  /* Usage GridLayout for task 3 point 7*/
+  display: grid;
+}
+.header__iframe {
+  height: 120px;
+  position: absolute;
+}
+.wrapper__header__nav {
+  padding: 20px 20px 0 20px;
+  width: 100%;
+  top: 0;
+  /*Use position sticky for task 3 point 4*/
+  position: sticky;
+}
+.wrapper__header__menu {
+  margin-left: 50%;
+  width: 500px;
+  line-height: 70px;
+  /* Usage GridLayout for task 3 point 7*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.iframe__footer {
+  height: 40px;
+  margin-top: 30px;
+}

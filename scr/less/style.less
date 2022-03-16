@@ -1,0 +1,56 @@
+//compress: false
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import "variable";
+
+*, ::after , ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    font-size: @indent;
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4 {
+   color: @topicColor;
+}
+
+.wrapper__main {
+    margin: auto;
+    /* Usage GridLayout for task 3 point 7*/
+    display: grid;
+}
+
+.header__iframe {
+    height: 120px;
+    position: absolute;
+}
+
+.wrapper__header__nav {
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    top: 0;
+    /*Use position sticky for task 3 point 4*/
+    position: sticky;
+}
+
+.wrapper__header__menu {
+    margin-left: 50%;
+    width: 500px;
+    line-height: 70px;
+    /* Usage GridLayout for task 3 point 7*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.iframe__footer {
+    height: 40px;
+    margin-top: 30px;
+}
