@@ -1,15 +1,17 @@
+@import "variable";
+
 .wrapper__main {
     display: grid;
 }
 
 h2 {
     /*Import and use variable, use of options (functions) in LESS*/
-    margin-bottom: 30px;
+    margin-bottom: @mainSize + 10;
     text-align: center;
 }
 
 .wrapper__description {
-    text-indent: 20px;
+    text-indent: @mainSize;
 }
 
 
@@ -25,7 +27,7 @@ h2 {
 }
 
 .wrapper__news {
-    margin-top: 20px;
+    margin-top: @mainSize;
     padding: 10px;
     /*Use flexbox for task 3 point 6*/
     display: flex;
@@ -34,12 +36,11 @@ h2 {
 }
 
 h4 {
-    margin-top: 20px;
+    margin-top: @mainSize;
 }
 
 .wrapper__news__item {
     width: 200px;
-    
     margin: 0 15px 20px 0;
 }
 

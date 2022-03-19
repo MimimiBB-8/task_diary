@@ -1,13 +1,17 @@
-@import url('../scr/css/main__css.css');
+@import "variable";
 
 .wrapper__main {
-    justify-items:center;
+    justify-items: center;
+}
+
+.marginTop {
+    margin-top: 20px;
 }
 
 address {
     text-indent: 20px;
     text-align: center;
-    margin-top: 20px;
+    .marginTop
 }
 
 h3 {
@@ -16,7 +20,7 @@ h3 {
 }
 
 ul {
-    margin-top: 20px;
+    .marginTop;
 }
 
 ul li {
@@ -38,10 +42,21 @@ img {
     max-width: 560px;
 }
 
+/*Create mixins*/
+.rounded_top {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
 .form__wrapper {
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 4px;
+    /*Use mixins*/
+    .rounded_top;
 }
 
 .form__wrapper__feedback__row {
@@ -52,7 +67,8 @@ img {
     .form__wrapper__feedback__row>.form__wrapper__feedback__group {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 50%;
+        /*Use escaping in LESS*/
+        max-width: ~"calc(100% - 100px)"; 
         padding-right: 5px;
         padding-left: 5px;
     }
@@ -72,11 +88,13 @@ img {
     border-radius: .25rem;
 }
 
-.form__wrapper__feedback__control:focus {
-    color: #495057;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+.form__wrapper__feedback__control {
+    &:focus {
+        color: #495057;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    }
 }
 
 textarea.form__wrapper__feedback__control {
@@ -85,21 +103,40 @@ textarea.form__wrapper__feedback__control {
     height: auto;
 }
 
-.form__wrapper__feedback__submit  {
+.form__wrapper__feedback__submit {
     text-align: right;
 }
 
-button[type="submit"] {
+/*Create mixins with argument*/
+.radius(@radius: 2px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+/*Create mixins with lots of arguments*/
+.button(@radius: 2px, @background: @buttonColor, @padding: 10px) {
+    .radius(@radius);
+    background: @background;
+    border: 1px solid @background;
+    padding: @padding;
     color: #fff;
-    text-align: center;
-    background-color: #485b6f;
-    border: 1px solid #485b6f;
-    padding: 10px;
-    border-radius: 10px;
 }
 
 
-.iframe__footer{
+.submitButton {
+    /*Use mixins with lots of arguments*/
+    .button(10px);
+
+    &:hover {
+        /*Import and usge variable, use color function in LESS*/
+        background: lighten(@buttonColor, 20%);
+        border: 1px solid lighten(@buttonColor, 10%);
+    }
+}
+
+
+.iframe__footer {
     /* Usge position for task 3 poin 4*/
     position: fixed;
     bottom: 0;

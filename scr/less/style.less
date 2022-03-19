@@ -13,11 +13,13 @@
 }
 
 body {
-    font-size: @indent;
+    /*Import and usge variable in LESS*/
+    font-size: @mainSize ;
     font-family: 'Varela Round', sans-serif;
 }
 
 h1, h2, h3, h4 {
+    /*Import and usge variable in LESS*/
    color: @topicColor;
 }
 
@@ -28,12 +30,13 @@ h1, h2, h3, h4 {
 }
 
 .header__iframe {
-    height: 120px;
+    /*Import and use variable, use of options (functions) in LESS*/
+    height: @mainSize * 6;
     position: absolute;
 }
 
 .wrapper__header__nav {
-    padding: 20px 20px 0 20px;
+    padding:  @mainSize  @mainSize 0  @mainSize;
     width: 100%;
     top: 0;
     /*Use position sticky for task 3 point 4*/

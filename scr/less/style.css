@@ -16,6 +16,7 @@
   color: black;
 }
 body {
+  /*Import and usge variable in LESS*/
   font-size: 20px;
   font-family: 'Varela Round', sans-serif;
 }
@@ -23,6 +24,7 @@ h1,
 h2,
 h3,
 h4 {
+  /*Import and usge variable in LESS*/
   color: #191152;
 }
 .wrapper__main {
@@ -31,6 +33,7 @@ h4 {
   display: grid;
 }
 .header__iframe {
+  /*Import and use variable, use of options (functions) in LESS*/
   height: 120px;
   position: absolute;
 }

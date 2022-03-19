@@ -1,0 +1,38 @@
+.wrapper__main {
+  display: grid;
+}
+h2 {
+  /*Import and use variable, use of options (functions) in LESS*/
+  margin-bottom: 30px;
+  text-align: center;
+}
+.wrapper__description {
+  text-indent: 20px;
+}
+.wrapper__img {
+  /*Use float for task 3 point 3*/
+  float: left;
+  margin-right: 15px;
+}
+.wrapper__img img {
+  height: 250px;
+}
+.wrapper__news {
+  margin-top: 20px;
+  padding: 10px;
+  /*Use flexbox for task 3 point 6*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h4 {
+  margin-top: 20px;
+}
+.wrapper__news__item {
+  width: 200px;
+  margin: 0 15px 20px 0;
+}
+.wrapper__news__item img {
+  width: 200px;
+  height: 150px;
+}

@@ -1,4 +1,4 @@
-@import url('../scr/css/main__css.css');
+@import "variable";
 
 .wrapper__main {
     justify-items:center;
@@ -9,7 +9,7 @@ table {
     border: 1px solid black;
     text-align: center;
     table-layout: fixed;
-    margin: 20px 0;
+    margin: @mainSize 0;
 }
 
 thead {
@@ -17,7 +17,7 @@ thead {
 }
 
 td {
-    padding: 20px;
+    padding: @mainSize;
     border: 1px solid black;
 }
 
@@ -30,7 +30,7 @@ tbody td {
     position: fixed;
     top: 200px;
     right: 20px;
-    margin-left: 20px;
+    margin-left: @mainSize;
 }
 
 .wrapper__change-table__item {
