@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import "variable";
+
+*, ::after , ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+   /*Import and usge variable in SCSS*/
+    font-size: $mainSize ;
+    font-family: $fontFamily;
+}
+
+h1, h2, h3, h4 {
+    /*Import and usge variable in SCSS*/
+   color: $topicColor;
+}
+
+.wrapper__main {
+    margin: auto;
+    display: grid;
+}
+
+.header__iframe {
+    /*Import and use variable in SCSS*/
+    height: $mainSize * 6;
+    position: absolute;
+}
+
+.wrapper__header__nav {
+    padding:  $mainSize  $mainSize 0  $mainSize;
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
+
+.wrapper__header__menu {
+    margin-left: 50%;
+    width: 500px;
+    line-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.iframe__footer {
+    height: 40px;
+    margin-top: 30px;
+}

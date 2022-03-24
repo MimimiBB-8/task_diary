@@ -1,0 +1,70 @@
+.wrapper__main {
+  justify-items: center;
+}
+
+/* Checking for the presence of a parent element */
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  table-layout: fixed;
+  margin: 20px 0;
+}
+
+thead {
+  height: 90px;
+}
+
+/*Use directive @for*/
+* .tr-1 {
+  background: #f1f1f1;
+  color: white;
+}
+* .tr-3 {
+  background: #f1f1f1;
+  color: white;
+}
+* .tr-5 {
+  background: #f1f1f1;
+  color: white;
+}
+
+td {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+tbody td {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Use directive @if*/
+  /* Apply blue color to parent element if it exists */
+}
+tbody td:hover {
+  color: red;
+}
+
+.wrapper__change-table {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  margin-left: 20px;
+}
+
+.wrapper__change-table__item {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.wrapper__change-table__item label {
+  margin-bottom: 10px;
+}
+
+.iframe__footer {
+  height: 40px;
+  position: static;
+  margin-top: 40px;
+}

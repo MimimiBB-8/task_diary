@@ -1,0 +1,82 @@
+@import "variable";
+
+.wrapper__main {
+    justify-items:center;
+}
+
+/* Checking for the presence of a parent element */
+@mixin does-parent-exist {
+    /*Use directive @if*/
+    @if & {
+        /* Apply blue color to parent element if it exists */
+        &:hover {
+            color: red;
+        }
+    } @else {
+        /* No parent element, blue color applied to links */
+        p {
+            color: blue;
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    table-layout: fixed;
+    margin: $mainSize 0;
+}
+
+thead {
+    height: 90px;
+}
+
+/*Use directive @for*/
+@mixin zebra(){
+    @for $i from 1 through 6{
+        @if($i % 2 ==1 ){
+            .tr-#{$i}{
+                background: rgb(241, 241, 241);
+                color: white;
+            }
+        }
+    }
+}
+
+*{@include zebra();}
+
+td {
+    padding: $mainSize;
+    border: 1px solid black;
+}
+
+tbody td {
+    align-items: center;
+    
+    @include does-parent-exist();
+}
+
+.wrapper__change-table {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    margin-left: $mainSize;
+}
+
+.wrapper__change-table__item {
+    display: grid;
+    justify-items:center;
+    margin-bottom: 15px; 
+}
+
+.wrapper__change-table__item label {
+    margin-bottom: 10px;
+}
+
+.iframe__footer {
+    height: 40px;
+    position: static;
+    margin-top: 40px;
+}
+

@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- <link rel="stylesheet" href="./schedule_css.css" /> -->
 
-     <!-- Usage LESS like compiled CSS-->
+    <!-- Usage LESS like compiled CSS-->
     <!-- <link rel="stylesheet" type="text/css" href="../scr/less/style.css">
     <link rel="stylesheet" type="text/css" href="../scr/less/schedule.css"> -->
-    
-     <!-- Use LESS with connection js-->
-     <link rel="stylesheet/less" type="text/css" href="../scr/less/style.less" />
-     <link rel="stylesheet/less" type="text/css" href="../scr/less/schedule.less" />
-    <script src="../scr/less/less.js" ></script>
 
-    <link rel="stylesheet" type="text/css" href="../scr/css/media.css"/>
+    <!-- Use LESS with connection js-->
+    <!-- <link rel="stylesheet/less" type="text/css" href="../scr/less/style.less" />
+     <link rel="stylesheet/less" type="text/css" href="../scr/less/schedule.less" />
+    <script src="../scr/less/less.js" ></script> -->
+
+    <!-- Usage SCSS like compiled CSS-->
+    <link rel="stylesheet" href="../scr/sass_scss/css/style.css" />
+    <link rel="stylesheet" href="../scr/sass_scss/css/schedule.css" />
+
+    <link rel="stylesheet" type="text/css" href="../scr/css/media.css" />
     <title>schedule</title>
   </head>
   <body>
@@ -26,23 +30,21 @@
       width="100%"
       frameborder="0"
       sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-      class="header__iframe "
+      class="header__iframe"
     >
     </iframe>
     <main>
-      
-      
       <div class="wrapper__main">
         <!-- navigation bar -->
 
-      <nav class="wrapper__header__nav">
-        <div class="wrapper__header__menu">
-          <a href="../index.html">Home</a>
-          <a href="./schedule.html">Schedule</a>
-          <a href="../about/about.html">About</a>
-        </div>
-      </nav>
-      
+        <nav class="wrapper__header__nav">
+          <div class="wrapper__header__menu">
+            <a href="../index.html">Home</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="../about/about.html">About</a>
+          </div>
+        </nav>
+
         <!-- Add Schema.org vocabulary encoding RDFa item Person for description project task 2 point 7-->
         <table
           vocab="http://schema.org/"
@@ -66,32 +68,32 @@
               <!-- Add item name for for determining description event-->
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-1">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-2">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-3">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-4">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-5">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>
             </tr>
-            <tr>
+            <tr class="tr-6">
               <td property="startDate"></td>
               <td property="startDate"></td>
               <td property="name"></td>

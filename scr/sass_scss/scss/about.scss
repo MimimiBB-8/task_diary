@@ -1,0 +1,141 @@
+@import "variable";
+
+.wrapper__main {
+    justify-items: center;
+}
+
+/*Create mixins*/
+
+@mixin marginTop() {
+    margin-top: 20px;
+}
+
+address {
+    text-indent: 20px;
+    text-align: center;
+
+    /*Use mixins */
+    @include marginTop()
+}
+
+h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    @include marginTop()
+}
+
+ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+img {
+    width: 30px;
+}
+
+.done {
+    display: none !important;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 15px;
+    max-width: 560px;
+}
+
+/*Create mixins*/
+@mixin rounded_top() {
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.form__wrapper {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    /*Use mixins*/
+    @include rounded_top();
+}
+
+.form__wrapper__feedback__row {
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    .form__wrapper__feedback__row>.form__wrapper__feedback__group {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.form__wrapper__feedback__group {
+    margin-bottom: 1rem;
+}
+
+.form__wrapper__feedback__control {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.form__wrapper__feedback__control {
+    &:focus {
+        color: #495057;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    }
+}
+
+textarea.form__wrapper__feedback__control {
+    overflow: auto;
+    resize: vertical;
+    height: auto;
+}
+
+.form__wrapper__feedback__submit {
+    text-align: right;
+}
+
+/*Create mixins with argument*/
+
+@mixin radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+.submitButton {
+    /*Use mixins*/
+    
+    @include radius(10px);
+    background: $buttonColor;
+    border: 1px solid $buttonColor;
+    padding: 10px;
+    color: #fff;
+
+    &:hover {
+        /*Import and usge variable, use color function in SCSS*/
+        background: lighten($buttonColor, 20%);
+        border: 1px solid lighten($buttonColor, 10%);
+    }
+}
+
+
+.iframe__footer {
+    position: fixed;
+    bottom: 0;
+}
